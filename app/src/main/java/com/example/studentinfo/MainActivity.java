@@ -6,7 +6,6 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -57,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, course);
         courseSpin.setAdapter(adapter);
-        dobEdt.setInputType(InputType.TYPE_NULL);
-        adtimeEdt.setInputType(InputType.TYPE_NULL);
 
         Calendar calendar = Calendar.getInstance();
         dobEdt.setOnClickListener(new View.OnClickListener() {
